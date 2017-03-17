@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## Recommended team workflow
 
-You can use the [editor on GitHub](https://github.com/hkpeterpeter/my-team-workflow/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Git is a version control software. It is just a tool, and we need to agree on a team workflow in order to use this tool effectively. There are 2 common workflows in Git/GitHub:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Fork and pull approach: Suitable for medium to large scale project
+- Shared repository and feature branch approch: Suitable for a small team project
 
-### Markdown
+## Shared repository and feature branch
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Key ideas
 
-```markdown
-Syntax highlighted code block
+- Keep the master branch as a stable release branch
+- Each team member will have push/pull access to a shared repo
+- Create a feature branch (e.g. feature-XXX)
+- Develop the feature on the branch "feature-XXX"
+- Sync with the master branch and resolve conflicts
+- Commit your changes and push to the feature branch 
+- Send a pull request to the master branch
+- Code review and merge / reject the changes
 
-# Header 1
-## Header 2
-### Header 3
+### Step 1 - Team member clone the shared repository
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hkpeterpeter/my-team-workflow/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+git clone [Repo URL]
+```
