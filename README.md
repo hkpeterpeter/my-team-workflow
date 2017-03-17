@@ -14,7 +14,7 @@ Git is a version control software. It is just a tool, and we need to agree on a 
 - Create a feature branch (e.g. feature-XXX)
 - Develop the feature on the branch "feature-XXX"
 - Sync with the master branch and resolve conflicts
-- Commit your changes and push to the feature branch 
+- Commit your changes and publish to the feature branch 
 - Send a pull request to the master branch
 - Code review and merge / reject the changes
 
