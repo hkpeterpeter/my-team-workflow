@@ -64,7 +64,7 @@ git merge master               # merge diff from master
 
 Please don't push to the remote repository if some errors happen
 
-### Step 4 - Commit to your feature branch and push to the remote repo
+### Step 5 - Commit to your feature branch and push to the remote repo
 
 If there are no conflicts after syncing with the master branch, we can push the changes to the remmote repo and prepare for a pull request
 
@@ -79,7 +79,7 @@ If it is the first time to push from local to remote, additional parameters are 
 git push --set-upstream origin [branch name]
 ```
 
-### Step 5 - Pull request and Merge
+### Step 6 - Pull request and Merge
 
 1. Switch to the GitHub web interface
 2. Select the `branch name` you would like to merge to master
@@ -89,15 +89,17 @@ git push --set-upstream origin [branch name]
 6. Discussion. If needed, the feature branch maintainer should make changes and commit to the feature branch. Ideally, the pull request will be updated.
 7. Approve/Reject the merge
 
-### Step 6 - Delete local and remote branch
+### Step 7 - [Optional] Delete local and remote branch
 
-Delete local branch:
+Once the branch is merged, we may consider to delete the feature branch if needed
+
+Delete a local branch:
 
 ```
 git branch -d [branch name]
 ```
 
-Delete remote branch:
+Delete a remote branch:
 
 ```
 git push origin --delete [branch name]
