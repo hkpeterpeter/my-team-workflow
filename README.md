@@ -32,7 +32,13 @@ git clone [Repo URL]
 git checkout -b [feature-branch-name]
 ```
 
-`git show-branch` is used to query the names of the branches
+`git branch` is used to query the current branches
+
+```
+git branch
+```
+
+`git show-branch` is used to query more information about the branch
 
 ```
 git show-branch
@@ -60,8 +66,7 @@ git checkout [feature-branch]   # switch to the feature branch
 git push                        # push from local to remote feature branch
 ```
 
-### Step 5 - Pull request
-
+### Step 5 - Pull request and Merge
 
 1. Switch to the GitHub web interface
 2. Select the `feature-branch`
@@ -70,3 +75,17 @@ git push                        # push from local to remote feature branch
 5. Review commit log messages and file changes
 6. Discussion. If needed, the feature branch maintainer should make changes and commit to the feature branch. Ideally, the pull request will be updated.
 7. Approve/Reject the merge
+
+### Step 6 - Delete local and remote branch
+
+Delete local branch:
+
+```
+git branch -d [branch name]
+```
+
+Delete remote branch:
+
+```
+git push origin --delete [branch name]
+```
