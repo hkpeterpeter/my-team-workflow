@@ -29,7 +29,7 @@ git clone [Repo URL]
 `git checkout -b` is used to create a new branch
 
 ```
-git checkout -b [feature-branch-name]
+git checkout -b [branch-name]
 ```
 
 `git branch` is used to query the current branches
@@ -38,13 +38,10 @@ git checkout -b [feature-branch-name]
 git branch
 ```
 
-`git show-branch` is used to query more information about the branch
-
-```
-git show-branch
-```
-
 `git checkout` is used to switch different branches
+```
+git checkout
+```
 
 ### Step 3 - Sync with the master branch and resolve conflicts
 
@@ -53,7 +50,7 @@ The following steps will first pull the changes from the remote repository in th
 ```
 git checkout master            # switch to the local master
 git pull                       # pull from remote master
-git checkout [feature-branch]  # switch to the feature branch
+git checkout [branch name]     # switch to the feature branch
 git merge master               # merge diff from master
 ```
 
@@ -62,14 +59,20 @@ git merge master               # merge diff from master
 If there are no conflicts after syncing with the master branch, we can push the changes to the remmote repo and prepare for a pull request
 
 ```
-git checkout [feature-branch]   # switch to the feature branch
+git checkout [branch name]      # switch to the feature branch
 git push                        # push from local to remote feature branch
+```
+
+If it is the first time to push from local to remote, additional parameters are needed:
+
+```
+git push --set-upstream origin [branch name]
 ```
 
 ### Step 5 - Pull request and Merge
 
 1. Switch to the GitHub web interface
-2. Select the `feature-branch`
+2. Select the `branch name` you would like to merge to master
 3. Click `New pull request` button
 4. Type in the pull request title and comments
 5. Review commit log messages and file changes
