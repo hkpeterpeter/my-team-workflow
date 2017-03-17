@@ -50,3 +50,12 @@ git pull                       # pull from remote master
 git checkout [feature-branch]  # switch to the feature branch
 git merge master               # merge diff from master
 ```
+
+### Step 4 - Commit to your feature branch and push to the remote repo
+
+If there are no conflicts after syncing with the master branch, we can push the changes to the remmote repo and prepare for a pull request
+
+```
+git checkout [feature-branch]   # switch to the feature branch
+git push                        # push from local to remote feature branch
+```
