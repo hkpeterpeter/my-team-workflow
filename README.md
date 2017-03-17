@@ -59,3 +59,14 @@ If there are no conflicts after syncing with the master branch, we can push the 
 git checkout [feature-branch]   # switch to the feature branch
 git push                        # push from local to remote feature branch
 ```
+
+### Step 5 - Pull request
+
+
+1. Switch to the GitHub web interface
+2. Select the `feature-branch`
+3. Click `New pull request` button
+4. Type in the pull request title and comments
+5. Review commit log messages and file changes
+6. Discussion. If needed, the feature branch maintainer should make changes and commit to the feature branch. Ideally, the pull request will be updated.
+7. Approve/Reject the merge
