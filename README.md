@@ -40,3 +40,13 @@ git show-branch
 
 `git checkout` is used to switch different branches
 
+### Step 3 - Sync with the master branch and resolve conflicts
+
+The following steps will first pull the changes from the remote repository in the master branch. After that, the local master branch should be synchorized. Then, we switch to the feature branch and finally merge from the local master branch
+
+```
+git checkout master            # switch to the local master
+git pull                       # pull from remote master
+git checkout [feature-branch]  # switch to the feature branch
+git merge master               # merge diff from master
+```
