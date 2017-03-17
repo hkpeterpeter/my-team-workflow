@@ -10,9 +10,8 @@ Git is a version control software. It is just a tool, and we need to agree on a 
 ### Key ideas
 
 - Keep the master branch as a stable release branch
-- Each team member will have push/pull access to a shared repo
-- Create a feature branch (e.g. feature-XXX)
-- Develop the feature on the branch "feature-XXX"
+- Each team member will create a new feature branch (e.g. feature-XXX)
+- Develop the feature on the feature branch and commit
 - Sync with the master branch and resolve conflicts
 - Commit your changes and publish to the feature branch 
 - Send a pull request to the master branch
@@ -43,7 +42,16 @@ git branch
 git checkout
 ```
 
-### Step 3 - Sync with the master branch and resolve conflicts
+### Step 3 - Development the feature and commit (locally)
+
+After your develope the feature, you should:
+
+```
+git add .                      # stage files (new, modified, deleted, equivalent to ``git add -A``)
+git commit -m "[Comment]"      # write a reasonable commit log    
+```
+
+### Step 4 - Sync with the master branch and resolve conflicts
 
 The following steps will first pull the changes from the remote repository in the master branch. After that, the local master branch should be synchorized. Then, we switch to the feature branch and finally merge from the local master branch
 
@@ -53,6 +61,8 @@ git pull                       # pull from remote master
 git checkout [branch name]     # switch to the feature branch
 git merge master               # merge diff from master
 ```
+
+Please don't push to the remote repository if some errors happen
 
 ### Step 4 - Commit to your feature branch and push to the remote repo
 
