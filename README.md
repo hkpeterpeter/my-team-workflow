@@ -23,3 +23,20 @@ Git is a version control software. It is just a tool, and we need to agree on a 
 ```
 git clone [Repo URL]
 ```
+
+### Step 2 - Create a feature branch
+
+`git checkout -b` is used to create a new branch
+
+```
+git checkout -b [feature-branch-name]
+```
+
+`git show-branch` is used to query the names of the branches
+
+```
+git show-branch
+```
+
+`git checkout` is used to switch different branches
+
