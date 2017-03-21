@@ -1,3 +1,5 @@
+Modified.... (VERSION 2)
+
 ## Recommended team workflow
 
 Git is a version control software. It is just a tool, and we need to agree on a team workflow in order to use this tool effectively. There are 2 common workflows in Git/GitHub:
