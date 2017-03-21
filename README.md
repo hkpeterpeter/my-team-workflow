@@ -34,12 +34,12 @@ git checkout -b [branch-name]
 `git branch` is used to query the current branches
 
 ```
-git branch
+git branch 
 ```
 
 `git checkout` is used to switch different branches
 ```
-git checkout
+git checkout [branch-name]
 ```
 
 ### Step 3 - Development the feature and commit (locally)
