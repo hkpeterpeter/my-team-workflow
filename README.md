@@ -1,4 +1,4 @@
-Modified for COMP3111 demo
+Modified for COMP3111 demo (Version 2)
 
 ## Navigation
 - [Suggested team workflow](#suggested-team-workflow)
