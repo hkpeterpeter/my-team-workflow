@@ -1,3 +1,6 @@
+Modified for COMP3111 Lab (10:48am)
+A better implementation
+
 
 ### Key ideas
 
