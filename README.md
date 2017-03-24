@@ -1,6 +1,7 @@
 ## Navigation
 - [Suggested team workflow](#suggested-team-workflow)
 - [Restore from previous commit](#restore-from-previous-commit)
+- [Delete files from Git repository](#delete-files-from-git-repository)
 
 ## Suggested team workflow
 
@@ -101,3 +102,20 @@ git checkout -b [new branch name] [commit id]   # create a new branch from an ol
 
 Other advanced operations:
 [StackOverflow: How to revert Git repository to a previous commit?](http://stackoverflow.com/questions/4114095/how-to-revert-git-repository-to-a-previous-commit)
+
+## Delete files from Git repository
+
+### Step 1 - Remove and commit
+If you need to remove a file from both git repo and local filesystem:
+```sh
+git rm [filename]
+```
+If you only want to remove a file from git repo (and keep the local copy):
+```sh
+git rm --cached [filename]
+```
+
+### Step 2 - Push to the remote repo
+```sh
+git push
+```
