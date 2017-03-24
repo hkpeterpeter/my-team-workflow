@@ -1,3 +1,5 @@
+Modified for COMP3111 demo
+
 ## Navigation
 - [Suggested team workflow](#suggested-team-workflow)
 - [Restore from previous commit](#restore-from-previous-commit)
