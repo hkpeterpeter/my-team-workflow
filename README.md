@@ -4,7 +4,8 @@
 - [Delete files from Git repository](#delete-files-from-git-repository)
 
 ## Suggested team workflow
-
+**centralized workflow + feature branching** should be used for a small dev team
+- Team members should be the contributors with push permission to the centralized repo
 - Keep the master branch as a stable release branch
 - Each team member will create a new feature branch (e.g. feature-XXX)
 - Sync with the master branch and resolve conflicts
@@ -12,7 +13,11 @@
 - Send a pull request to the master branch
 - Code review and merge OR reject the changes
 
-### Step 1 - Team member clone the shared repository
+Further references about different workflows:
+- [git-scm: Distributed Workflows](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+- [atlassian: Comparing workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
+
+### Step 1 - Clone the repository
 ```sh
 git clone [Repo URL]
 ```
@@ -90,6 +95,7 @@ Alternatively, you can use a web interface to delete a remote branch
 ```sh
 git log
 ```
+The commit ids can also be found via the web interface at GitHub
 ### Step 2.1 - Temporary detach and view the commit 
 ```sh
 git checkout [commit id]      # temporary detach and view
