@@ -19,9 +19,15 @@ Further references about different workflows:
 - [git-scm: Distributed Workflows](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 - [atlassian: Comparing workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
 
-### Step 1 - Clone the repository
+### Step 1.1 - Clone the repository 
+Clone the whole repository for the first time
 ```sh
 git clone [Repo URL]
+```
+### Step 1.2 - Checkout a remote branch
+Checkout a remote branch and create a local branch. Local and remote branch can have different name.
+```sh
+git checkout -b [branch name] origin/[branch name]
 ```
 
 ### Step 2 - Create a feature branch
