@@ -133,3 +133,10 @@ git rm --cached [filename]
 ```sh
 git push
 ```
+
+## Other useful Git usage
+
+### Rename a local branch
+```sh
+git branch -m <oldname> <newname>
+```
